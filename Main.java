@@ -39,12 +39,8 @@ public class Main {
                 if (dollar_amt >= coinValue) {
                     int remainder = (int) Math.ceil(dollar_amt % coinValue);
                     System.out.println(remainder);
-//                    if(remainder < 5){
-//                        coin_amounts.add((int) )
-//                    }else{
                         coin_amounts.add((int) (dollar_amt - remainder) / coinValue);
                         dollar_amt = remainder;
-//                    }
                 } else {
                     coin_amounts.add(0);
                 }
