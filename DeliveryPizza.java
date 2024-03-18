@@ -1,7 +1,9 @@
+//Creating deliveryPizza class
 public class DeliveryPizza extends Pizza{
     short deliveryFee;
     String deliveryAddress;
 
+    //create constructor
     public DeliveryPizza(String[] toppingList, short numToppings, String deliveryAddress){
         super(toppingList, numToppings);
         this.deliveryAddress = deliveryAddress;
@@ -14,6 +16,7 @@ public class DeliveryPizza extends Pizza{
         }
     }
 
+    //this creates the description for the pizza
     public String deliveryPizzaDescription(){
         return String.join(". ", toString(), "The address is " + deliveryAddress);
     }
